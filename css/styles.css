@@ -53,7 +53,9 @@ body {
     opacity: 1;
     
 }
-
+::placeholder{
+    letter-spacing: 4px;
+}
 h1 {
     font-size: 24px;
     margin: 0;
