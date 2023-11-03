@@ -2,7 +2,137 @@
 <head>
     <meta http-equiv="refresh" content="3" >
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan" rel="stylesheet">
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    top:0;
+    width: 100%;
+    height: 20vh; /* 30% of the viewport height */
+    /*background-color: #E7E0BF; /* Header background color */
+    background-color: burlywood;
+    color: black; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size:100px;
+    
+}
+
+.main-content {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    height: 79.6vh;
+    width: 100%;
+    overflow: hidden;
+    /* height: 73.9vh; */
+    /* background-image: url('C:/Users/theja/Desktop/my_covet/assets/loginPageBg.jpeg');  */
+    background-size:cover; /* Cover the entire element with the image */
+    opacity: 0.7;
+    text-align: center;
+    /* padding: 20px; */
+    opacity: 0.8;
+    vertical-align: middle;
+    
+}
+
+.main-content img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    
+}
+::placeholder{
+    letter-spacing: 4px;
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.login{
+    position: absolute;
+    top: 50%; /* Move the top edge to the vertical center */
+    left: 50%; /* Move the left edge to the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element exactly in the middle */
+    width: 45%; /* Set the width of the rectangle */
+    height: 80%; /* Set the height of the rectangle */
+    background-color: #E7E0BF;
+    border-radius: 20px;
+    background-color:rgb(224, 194, 137); /* Set the background color of your division */
+    box-shadow: 35px 35px 10px rgba(0, 0, 0, 0.3); /* Set the shadow properties */
+}
+
+.login-box {
+    margin-bottom: 20px;
+    margin: 30px;
+}
+  
+label {
+    display: block;
+}
+  
+input {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    /* margin-top: 30px; */
+    margin: 0.5%;
+    box-shadow: 5px 5px 10px rgba(202, 207, 175, 0.3); /* Set the shadow properties */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+  
+button {
+    position: absolute; /* Position the button absolutely within the container */
+    top: 60%; /* Position the button at 50% from the top of the container */
+    left: 50%; /* Position the button at 50% from the left of the container */
+    transform: translate(-50%, -50%); /* Center the button in the middle of the container */
+    padding: 12px 15%; /* Set button padding */
+    background-color: #E7E0BF; /* Set button background color */
+    color: black; /* Set button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notReg{
+    margin-top: 20%; 
+    position: relative;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 700px) {
+
+    .notReg{
+        margin-top: 50%;
+    }
+
+}
+    </style>
     <title>my covet</title>
     
     <body>
@@ -11,7 +141,7 @@
         </header>
 
         <main class="main-content">
-            <img src="assets/loginPageBg.jpeg">
+            <img src="./assets/loginPageBg.jpeg">
             <div class="login">
                 <div class="login-box">
                     <label for="username"></label>
@@ -21,8 +151,8 @@
                     <label for="password"></label>
                     <input type="password" id="password" name="password" placeholder="password">
                   </div>
-                  <button type="submit">Login</button>
-                  <div class="notReg"><p>Not Registered ? <a href="./signup1.html" > create an account</a> </p></div>
+                  <button type="submit">Next</button>
+                  <div class="notReg"><p>Already have account? <a href="./index.html" > Sign in</a> </p></div>
             </div>
             
         </main>
