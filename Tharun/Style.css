@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./images/loginpagebi.jpg");
+    background-repeat: no-repeat;
+    background-size:1640px;
+}
+header{
+    background-color: #E7E0BF;
+    height: 15vh;
+    text-align: center;
+    margin-top: 0px;
+}
+
+header div{
+    text-align: center;
+}
+.form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+form{
+    background-color:#E7E0BF;
+    padding-top: 90px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    border: 1px solid #0c0b0b;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    height: 300px;
+    width: 350px;
+}
+button{
+    border-radius:10px ;
+    background-color: #C9C9C9;
+    height: 50px;
+    width: 110px;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 170px;
+    letter-spacing: 2px;
+}
+::placeholder{
+    font-size: 20px;
+    font-family:sans-serif;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+.insideform {
+    height:300px;
+    width: 480px;
+}
+p strong{
+    padding-left:10px ;
+}
+.insideform p a{
+    text-decoration:none ;
+}
+.insideform p{
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 30px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    height: 35px;
+    margin: 10px;
+}
