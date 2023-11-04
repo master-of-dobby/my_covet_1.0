@@ -25,21 +25,19 @@ body {
     align-items: center;
     font-family: fantasy;
     font-size:100px;
-    
+    padding: 0;
 }
 
 .main-content {
-    position: relative;
+    position:fixed;
     display: inline-block;
     padding: 0px;
     margin: 0px;
     height: 79.6vh;
     width: 100%;
     overflow: hidden;
-    /* height: 73.9vh; */
     /* background-image: url('C:/Users/theja/Desktop/my_covet/assets/loginPageBg.jpeg');  */
-    background-size:cover; /* Cover the entire element with the image */
-    opacity: 0.7;
+    background-size: cover;
     text-align: center;
     /* padding: 20px; */
     opacity: 0.8;
