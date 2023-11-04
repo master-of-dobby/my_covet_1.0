@@ -107,7 +107,7 @@ input {
   
 button {
     position: absolute; /* Position the button absolutely within the container */
-    top: 60%; /* Position the button at 50% from the top of the container */
+    top: 50%; /* Position the button at 50% from the top of the container */
     left: 50%; /* Position the button at 50% from the left of the container */
     transform: translate(-50%, -50%); /* Center the button in the middle of the container */
     padding: 12px 15%; /* Set button padding */
@@ -122,7 +122,7 @@ button {
 }
 
 .notReg{
-    margin-top: 20%; 
+    margin-top: 15%; 
     position: relative;   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
