@@ -51,9 +51,10 @@ body {
     opacity: 1;
     
 }
-::placeholder{
+/* ::placeholder{
     letter-spacing: 4px;
-}
+    
+} */
 h1 {
     font-size: 24px;
     margin: 0;
@@ -105,21 +106,7 @@ input {
 
 }
   
-button {
-    position: absolute; /* Position the button absolutely within the container */
-    top: 50%; /* Position the button at 50% from the top of the container */
-    left: 50%; /* Position the button at 50% from the left of the container */
-    transform: translate(-50%, -50%); /* Center the button in the middle of the container */
-    padding: 12px 15%; /* Set button padding */
-    background-color: #E7E0BF; /* Set button background color */
-    color: black; /* Set button text color */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: xx-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 .notReg{
     margin-top: 15%; 
@@ -129,7 +116,7 @@ button {
 
 /*navbar*/
 body{
-    height: 100vh;
+    height: fit-content;
     background-color: #E7E0BF;
     background-color: brown;
 }
@@ -138,7 +125,7 @@ li{
     list-style: none;
 }
 
-img{
+.navbar img{
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -156,7 +143,7 @@ a{
 }
 
 a:hover{
-    color: orange;
+    color:blue ;
 }
 
 /*HEADER*/
@@ -187,7 +174,8 @@ header{
 
 .navbar .toggle_btn{
     color: black;
-    font-size: 1.5rem;
+    font-size:2rem;
+    z-index: 1;
     cursor: pointer;
     display: none;
 }
@@ -199,9 +187,9 @@ header{
     outline: none;
     border-radius: 20px;
     font-weight: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
+    font-weight: bolder;
+    /* cursor: pointer; */
+    /* transition: scale 0.2 ease; */
 }
 
 .action_btn:hover{
@@ -212,7 +200,7 @@ header{
 
 .active_btn:active{
     scale: 0.95;
-}
+} 
 
 /*DROPDOWN MENU*/
 .dropdown_menu{
@@ -222,7 +210,7 @@ header{
     top: 60px;
     width: 300px;
     height: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(43, 223, 7, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden; 
@@ -233,6 +221,9 @@ header{
 
 .dropdown_menu.open{
     height: 240px;
+    overflow: hidden;
+    z-index: 2;
+    /* background-color: maroon; */
 }
 
 .dropdown_menu li{
@@ -245,6 +236,7 @@ header{
 .dropdown_menu .action_btn{
     width: 100%;
     display: flex;
+    overflow: hidden;
     justify-content: center;
 }
 
@@ -253,8 +245,8 @@ section#hero{
     height: calc(100vh - 60vh);
     display: flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     text-align: center;
     color: aliceblue;
 }
@@ -264,13 +256,56 @@ section#hero{
     margin-bottom: 1rem;
 }
 
+
+.searchButton{
+    width: 150px;
+    cursor:pointer ;
+}
+.searchparent{
+    margin: 10px;
+    height:fit-content ;
+}
+.searchparent1{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 30%;
+}
+.item{
+    width:300px;
+    margin: 10px;
+    border: solid black 2px;
+  }
+  .items1{
+    display: flex;
+    justify-content: center;
+  }
+  .items2{
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+  }
+  .albumbuttons button{
+    cursor: pointer;
+  }
+  .itemFooter{
+    display: flex;
+    justify-content: space-between;
+  }
+span{
+    color: white;
+}
 /*FOOTER*/
 .footer {
     background-color:#E7E0BF; /* Background color for the footer */
     color: black; /* Text color for the footer */
     padding: 10px;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     
@@ -283,17 +318,41 @@ section#hero{
 .footer .socialMedia i:hover{
     color: orange;
 }
-
+.footer img{
+    
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    vertical-align:middle;
+    border-radius: 30px;
+    padding: 20px;
+}
 /*RESPONSIVE DESIGN*/
-@media(max-width: 992px){
+@media(max-width: 970px){
     .navbar .links,
     .navbar .action_btn{
         display: none;
     }
-
+    .item{
+        width:200px;
+        margin: 10px;
+        border: solid black 2px;
+      }
+    img{
+        width: 200px;
+        height: 200px;
+      }
     .navbar .toggle_btn{
         display: block;
     }
+    ::placeholder{
+        padding-left: 5%;
+       
+        position: fixed;
+       
+}
+
+
 
     .dropdown_menu{
         display: block;
@@ -304,16 +363,28 @@ section#hero{
     .dropdown_menu{
         left: 2rem;
         width: unset;
-    }
+    }    
+    
+    ::placeholder{
+        padding-left: 5%;
+        position: fixed;  
+}
 
 }
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     .notReg{
         margin-top: 50%;
     }
+    ::placeholder{
+        padding-left: -1px;
+       letter-spacing: 0px;
+        position: fixed;
+        
+}
+
 
 }
