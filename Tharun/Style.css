@@ -1,390 +1,73 @@
-/* .header{
-    top: 0;
-    background-color: #E7E0BF;
-    height: 20%;
-    width: 100%;
-} */
-
-@import url(https://db.onlinewebfonts.com/c/2da952d097bffd198ec0f0aa3fdd6804?family=JejuHallasan);
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-.header {
-    top:0;
-    width: 100%;
-    height: 20vh; /* 30% of the viewport height */
-    /*background-color: #E7E0BF; /* Header background color */
-    background-color: burlywood;
-    color: black; /* Text color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: fantasy;
-    font-size:100px;
-    padding: 0;
-}
-
-.main-content {
-    position:fixed;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    height: 79.6vh;
-    width: 100%;
-    overflow: hidden;
-    /* background-image: url('C:/Users/theja/Desktop/my_covet/assets/loginPageBg.jpeg');  */
-    background-size: cover;
-    text-align: center;
-    /* padding: 20px; */
-    opacity: 0.8;
-    vertical-align: middle;
-    
-}
-
-.main-content img{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    
-}
-/* ::placeholder{
-    letter-spacing: 4px;
-    
-} */
-h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-p {
-    font-size: 18px;
-    margin: 0;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.login{
-    position: absolute;
-    top: 50%; /* Move the top edge to the vertical center */
-    left: 50%; /* Move the left edge to the horizontal center */
-    transform: translate(-50%, -50%); /* Center the element exactly in the middle */
-    width: 45%; /* Set the width of the rectangle */
-    height: 80%; /* Set the height of the rectangle */
-    background-color: #E7E0BF;
-    border-radius: 20px;
-    background-color:rgb(224, 194, 137); /* Set the background color of your division */
-    box-shadow: 35px 35px 10px rgba(0, 0, 0, 0.3); /* Set the shadow properties */
-}
-
-.login-box {
-    margin-bottom: 20px;
-    margin: 30px;
-}
-  
-label {
-    display: block;
-}
-  
-input {
-    width: 70%;
-    height: 40px;
-    padding: 10px;
-    /* margin-top: 30px; */
-    margin: 0.5%;
-    box-shadow: 5px 5px 10px rgba(202, 207, 175, 0.3); /* Set the shadow properties */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-  
-
-
-.notReg{
-    margin-top: 15%; 
-    position: relative;   
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/*navbar*/
 body{
-    height: fit-content;
-    background-color: #E7E0BF;
-    background-color: brown;
+    padding: 0;
+    margin: 0;
+    background-image: url("./images/loginpagebi.jpg");
+    background-repeat: no-repeat;
+    background-size:1640px;
 }
-
-li{
-    list-style: none;
-}
-
-.navbar img{
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    vertical-align:middle;
-    border-radius: 30px;
-    padding: 20px;
-
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    font-weight: bolder;
-}
-
-a:hover{
-    color:blue ;
-}
-
-/*HEADER*/
-
 header{
-    position: relative;
-    padding: 0 2rem;
     background-color: #E7E0BF;
-}
-
-.navbar{
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a{
-    font-size: 1.5rem;
-}
-
-.navbar .links{
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar .toggle_btn{
-    color: black;
-    font-size:2rem;
-    z-index: 1;
-    cursor: pointer;
-    display: none;
-}
-
-.action_btn{
-    background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border-radius: 20px;
-    font-weight: 0.8rem;
-    font-weight: bolder;
-    /* cursor: pointer; */
-    /* transition: scale 0.2 ease; */
-}
-
-.action_btn:hover{
-    scale: 1.05;
-    color: #fff;
-
-}
-
-.active_btn:active{
-    scale: 0.95;
-} 
-
-/*DROPDOWN MENU*/
-.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    height: 0;
-    background: rgba(43, 223, 7, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden; 
-    z-index: auto;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 
-}
-
-
-.dropdown_menu.open{
-    height: 240px;
-    overflow: hidden;
-    z-index: 2;
-    /* background-color: maroon; */
-}
-
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu .action_btn{
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-}
-
-/*HERO*/
-section#hero{
-    height: calc(100vh - 60vh);
-    display: flex;
-    flex-direction:column;
-    /* align-items: center;
-    justify-content: center; */
+    height: 15vh;
     text-align: center;
-    color: aliceblue;
+    margin-top: 0px;
 }
 
-#hero h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-
-.searchButton{
-    width: 150px;
-    cursor:pointer ;
-}
-.searchparent{
-    margin: 10px;
-    height:fit-content ;
-}
-.searchparent1{
-    display: flex;
-    justify-content: center;
-}
-img{
-    width: 30%;
-}
-.item{
-    width:300px;
-    margin: 10px;
-    border: solid black 2px;
-  }
-  .items1{
-    display: flex;
-    justify-content: center;
-  }
-  .items2{
-    display: flex;
-    justify-content: center;
-  }
-  img{
-    width: 300px;
-    height: 200px;
-  }
-  .albumbuttons button{
-    cursor: pointer;
-  }
-  .itemFooter{
-    display: flex;
-    justify-content: space-between;
-  }
-span{
-    color: white;
-}
-/*FOOTER*/
-.footer {
-    background-color:#E7E0BF; /* Background color for the footer */
-    color: black; /* Text color for the footer */
-    padding: 10px;
+header div{
     text-align: center;
-    /* position: fixed; */
-    bottom: 0;
-    width: 100%;
-    
 }
-
-.footer .socialMedia{
-    margin-right: 500px;
+.form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
-
-.footer .socialMedia i:hover{
-    color: orange;
-}
-.footer img{
-    
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    vertical-align:middle;
+form{
+    background-color:#E7E0BF;
+    padding-top: 90px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    border: 1px solid #0c0b0b;
+    margin-bottom: 10px;
     border-radius: 30px;
-    padding: 20px;
+    height: 300px;
+    width: 350px;
 }
-/*RESPONSIVE DESIGN*/
-@media(max-width: 970px){
-    .navbar .links,
-    .navbar .action_btn{
-        display: none;
-    }
-    .item{
-        width:200px;
-        margin: 10px;
-        border: solid black 2px;
-      }
-    img{
-        width: 200px;
-        height: 200px;
-      }
-    .navbar .toggle_btn{
-        display: block;
-    }
-    ::placeholder{
-        padding-left: 5%;
-       
-        position: fixed;
-       
+button{
+    border-radius:10px ;
+    background-color: #C9C9C9;
+    height: 50px;
+    width: 110px;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 170px;
+    letter-spacing: 2px;
 }
-
-
-
-    .dropdown_menu{
-        display: block;
-    }
+::placeholder{
+    font-size: 20px;
+    font-family:sans-serif;
+    padding-left: 10px;
+    letter-spacing: 2px;
 }
-
-@media(max-width: 576px){
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    }    
-    
-    ::placeholder{
-        padding-left: 5%;
-        position: fixed;  
+.insideform {
+    height:300px;
+    width: 480px;
 }
-
+p strong{
+    padding-left:10px ;
 }
-
-
-
-@media (max-width: 750px) {
-
-    .notReg{
-        margin-top: 50%;
-    }
-    ::placeholder{
-        padding-left: -1px;
-       letter-spacing: 0px;
-        position: fixed;
-        
+.insideform p a{
+    text-decoration:none ;
 }
-
-
+.insideform p{
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 30px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    height: 35px;
+    margin: 10px;
 }
